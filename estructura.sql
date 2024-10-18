@@ -36,5 +36,5 @@ create table sets(
     equipo2 int,
     numero int,
     constraint pkSets primary key(id),
-    constraint fkPartidoSets foreign key(IdPartido)
-)
+    constraint fkPartidoSets foreign key(IdPartido) references partidos(id)
+);
