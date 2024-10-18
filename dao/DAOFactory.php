@@ -1,10 +1,10 @@
 <?php
 class DAOFactory
 {
-    private $host = "";
-    private $dbname = "";
-    private $username = "";
-    private $password = "";
+    private $host = "database-boley.c54kcq6ein9a.us-east-1.rds.amazonaws.com";
+    private $dbname = "boleybol";
+    private $username = "admin";
+    private $password = "admin7038";
 
     private static $instance = null;
     private function __construct()
@@ -20,6 +20,6 @@ class DAOFactory
             }
         }
         return self::$instance;
-
     }
+    
 }
